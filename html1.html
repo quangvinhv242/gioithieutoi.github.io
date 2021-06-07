@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> DEMO THUẬT TOÁN</h1>
+</body>
+<button onclick="tinh_diem_trung_binh()"> Tính Điểm Trung Bình</button>
+<button onclick="tim_so_lon_nhat()"> Tìm số lớn nhất </button>
+<button onclick="xac_dinh_chan_le()"> Xác định chẵn lẻ </button>
+<body>
+    <script>
+        //bài số 1 : tính trung bình 3 môn Toán lý hóa.
+        function tinh_diem_trung_binh(){
+            //nhap 
+            let diemtoan = prompt('nhập điểm môn toán');
+            let diemly = prompt('nhập điểm môn lý');
+            let diemhoa = prompt('nhập điểm môn hóa');
+            //tính toán
+            let tong = Number(diemtoan)+Number(diemly)+Number(diemhoa);
+            let trungbinh = tong/3;
+            //xuat 
+            alert('điểm trung bình:' + trungbinh);
+        }
+        //bài số 2 : tìm số lớn nhất trong ba số a , b , c.
+        function tim_so_lon_nhat(){
+        //nhap
+        let a = prompt ('nhập số a');
+        let b = prompt ('nhập số b');
+        let c = prompt ('nhập số c');
+        a = Number(a)
+        b = Number(b)
+        c = Number(c)
+        if ( a > b) {
+            if ( a > c ) {
+                alert ( a + 'la so lon nhat');
+            } else {
+                alert ( c + ' la so lon nhat')
+            }
+        }else {
+            if ( b > c) {
+                alert ( b + 'la so lon nhat');
+            } else {
+                alert ( c + ' la so lon nhat');
+            }
+        }
+    }
+        //bài số 3 : xác định chẵn lẻ
+        function xac_dinh_chan_le(){
+            //Nhập
+            let a = prompt ('nhập a');
+            //so sánh
+             if (Number(a) % 2 == 0) {
+             alert('a là số chẵn');
+             }else {
+             alert('a là số lẻ');
+             }
+         } 
+
+    </script>
+</body>
+</html>
